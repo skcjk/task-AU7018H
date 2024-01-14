@@ -7,6 +7,7 @@ recorder=Recorder(a.X);
 for i=1:total
     output = controller.output(a.X);
     recorder.save_data(a.X, output(1));
+    % a.euler(output(1), output(2:5))
     a.RK4(output(1), output(2:5))
 end
 result = recorder.result;
