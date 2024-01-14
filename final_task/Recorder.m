@@ -1,5 +1,5 @@
 classdef Recorder < handle
-    %RECORDER 用于记录仿真结果
+    %RECORDER 用于记录不定长度的仿真结果
     
     properties
         result;
